@@ -9,22 +9,42 @@ function activate(context) {
 			"myPanel",
 			"Android XML",
 			vscode.ViewColumn.Two,
-			{}
+			{
+				enableScripts: true,
+				localResourceRoots: [
+					vscode.Uri.file(path.join(__dirname, 'window')),
+					vscode.Uri.file(path.join(__dirname, 'window', 'css')), 
+					vscode.Uri.file(path.join(__dirname, 'window', 'js')) 
+				]
+			}
 		)
 
-		panel.webview.html = getWindow();
+		getWindow(panel);
 
 	});
 
 	context.subscriptions.push(disposable);
 }
 
-function getWindow(){
+function getWindow(panel){
 	const htmlPath = path.join(__dirname, 'window', 'index.html')
 	const htmlContent = fs.readFileSync(htmlPath, 'utf-8')
+
+	const cssPath = path.join(__dirname, "window", "css", "style.css")
+	const cssUri = panel.webview.asWebviewUri(vscode.Uri.file(cssPath));
+
+	const scriptPath = path.join(__dirname, "window", "js", "script.js")
+	const scriptUri = panel.webview.asWebviewUri(vscode.Uri.file(scriptPath));
 	
-	return htmlContent
+	panel.webview.html = htmlContent.replace(
+		/href=\"css\/style\.css"/,
+		`href=${cssUri}`
+	).replace(
+		/src=\"js\/script\.js"/,
+		`src="${scriptUri}"`
+	)
 }
+
 
 // This method is called when your extension is deactivated
 function deactivate() {}
