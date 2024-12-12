@@ -7,6 +7,7 @@
 			"ES2022"
 		]
 	},
+	"include": ["window/js/**/*.js"],
 	"exclude": [
 		"node_modules"
 	]

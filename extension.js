@@ -13,8 +13,6 @@ function activate(context) {
 				enableScripts: true,
 				localResourceRoots: [
 					vscode.Uri.file(path.join(__dirname, 'window')),
-					vscode.Uri.file(path.join(__dirname, 'window', 'css')), 
-					vscode.Uri.file(path.join(__dirname, 'window', 'js')) 
 				]
 			}
 		)

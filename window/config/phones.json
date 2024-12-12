@@ -1,0 +1,107 @@
+{
+    "resolutions": [
+      {
+        "name": "HD",
+        "width": 1280,
+        "height": 720,
+        "aspect_ratio": "16:9"
+      },
+      {
+        "name": "FHD",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": "16:9"
+      },
+      {
+        "name": "QHD",
+        "width": 2560,
+        "height": 1440,
+        "aspect_ratio": "16:9"
+      },
+      {
+        "name": "4K UHD",
+        "width": 3840,
+        "height": 2160,
+        "aspect_ratio": "16:9"
+      },
+      {
+        "name": "HD+",
+        "width": 1480,
+        "height": 720,
+        "aspect_ratio": "18.5:9"
+      },
+      {
+        "name": "FHD+",
+        "width": 2280,
+        "height": 1080,
+        "aspect_ratio": "19:9"
+      },
+      {
+        "name": "QHD+",
+        "width": 3200,
+        "height": 1440,
+        "aspect_ratio": "20:9"
+      },
+      {
+        "name": "WXGA",
+        "width": 1280,
+        "height": 800,
+        "aspect_ratio": "16:10"
+      },
+      {
+        "name": "WUXGA",
+        "width": 1920,
+        "height": 1200,
+        "aspect_ratio": "16:10"
+      },
+      {
+        "name": "iPhone 12/13/14",
+        "width": 2532,
+        "height": 1170,
+        "aspect_ratio": "19.5:9"
+      },
+      {
+        "name": "iPhone 12/13 Mini",
+        "width": 2340,
+        "height": 1080,
+        "aspect_ratio": "19.5:9"
+      },
+      {
+        "name": "iPhone 14 Pro",
+        "width": 2556,
+        "height": 1179,
+        "aspect_ratio": "19.5:9"
+      },
+      {
+        "name": "iPhone 14 Pro Max",
+        "width": 2796,
+        "height": 1290,
+        "aspect_ratio": "19.5:9"
+      },
+      {
+        "name": "Google Pixel 7",
+        "width": 2400,
+        "height": 1080,
+        "aspect_ratio": "20:9"
+      },
+      {
+        "name": "Samsung Galaxy S23",
+        "width": 2340,
+        "height": 1080,
+        "aspect_ratio": "19.5:9"
+      },
+      {
+        "name": "Samsung Galaxy S23 Ultra",
+        "width": 3088,
+        "height": 1440,
+        "aspect_ratio": "19.3:9"
+      },
+      {
+        "name": "OnePlus 11",
+        "width": 3216,
+        "height": 1440,
+        "aspect_ratio": "20:9"
+      }
+    ]
+  }
+  
